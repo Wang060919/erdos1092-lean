@@ -1,0 +1,13 @@
+Erdos1092.erdos_1092 (r : ℕ) (hr : 2 ≤ r) : ¬∃ g, Erdos1092.IsAdmissible r g ∧ (fun n => ↑n) =O[atTop] fun n => ↑(g n)
+Erdos1092.exists_finite_hereditary_counterexample (ε : ℝ) (hε : 0 < ε) :
+  ∃ n X, ¬X.Colorable 3 ∧ Erdos1092.LocalCutBound ε X
+def Erdos1092.IsAdmissible : ℕ → (ℕ → ℕ) → Prop :=
+fun r g =>
+  ∀ (n : ℕ) (G : SimpleGraph (Fin n)),
+    (∀ (H : G.Subgraph),
+        ∃ E ⊆ H.coe.edgeFinset, E.card ≤ g (Fintype.card ↑H.verts) ∧ (H.coe.deleteEdges ↑E).chromaticNumber ≤ ↑r) →
+      G.chromaticNumber ≤ ↑r + 1
+'admissible_literal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'original_fixed_r' depends on axioms: [propext, Classical.choice, Quot.sound]
+'original_r_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'original_all_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]

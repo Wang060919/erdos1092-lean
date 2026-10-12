@@ -1,0 +1,48 @@
+name: Verify E1092
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - name: Check out the exact source revision
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          persist-credentials: false
+
+      - name: Check source hashes
+        run: python3 scripts/check_manifest.py
+
+      - name: Install the pinned official Lean release
+        shell: bash
+        run: |
+          set -euo pipefail
+          task_archive="${RUNNER_TEMP}/lean-4.33.0-linux.tar.zst"
+          curl --fail --location --retry 3 --connect-timeout 20 --max-time 600 \
+            'https://github.com/leanprover/lean4/releases/download/v4.33.0/lean-4.33.0-linux.tar.zst' \
+            --output "${task_archive}"
+          printf '%s  %s\n' \
+            '4b3fb03c29a1e0a253fb1d11f9bae3725f19a0dc6fc09b3ea16d2c9df3349e2c' \
+            "${task_archive}" | sha256sum --check --strict -
+          tar --zstd -xf "${task_archive}" -C "${RUNNER_TEMP}"
+          printf 'ERDOS1092_LEAN_BIN=%s\n' "${RUNNER_TEMP}/lean-4.33.0-linux/bin" >> "${GITHUB_ENV}"
+
+      - name: Obtain the official Mathlib cache for actual imports
+        shell: bash
+        env:
+          MATHLIB_NO_CACHE_ON_UPDATE: '1'
+        run: |
+          set -euo pipefail
+          scripts/cache.sh
+          python3 scripts/check_manifest.py --dependencies
+
+      - name: Compile, check original scope and axioms, and replay the kernel
+        run: scripts/verify.sh

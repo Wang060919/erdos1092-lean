@@ -1,0 +1,57 @@
+[
+  {
+    "file": "Erdos1092.lean",
+    "bytes": 22,
+    "sha256": "98cac31a23e29eb7d3b8b2ee4ecd7150b0150dfaf09f10babcab00359daaa526"
+  },
+  {
+    "file": "Erdos1092/Basic.lean",
+    "bytes": 2127,
+    "sha256": "13d109b89cd2ad1cc5ff028bb0a028aca70e71535c62d5099d67b07f9b7c7995"
+  },
+  {
+    "file": "Erdos1092/Cuts.lean",
+    "bytes": 16314,
+    "sha256": "fd2bd1ed3a7a9d968285a7a24a1d4fcb3281d1840050d04df5d61aa9eeb1fa33"
+  },
+  {
+    "file": "Erdos1092/Main.lean",
+    "bytes": 2632,
+    "sha256": "b76dd41de75a2bff32d36a2f6343bf81fcdaf781106701586ad8493d4aa6e80e"
+  },
+  {
+    "file": "Erdos1092/Outer.lean",
+    "bytes": 12266,
+    "sha256": "ee3283a4a858a265bb0d5664148ff7057bcd5f3658c2bb6c614c198a22b236f2"
+  },
+  {
+    "file": "Erdos1092/Parameters.lean",
+    "bytes": 1609,
+    "sha256": "5d4726d836ba8c8de2efbfd6ddd8538291319dde272dd7154e3edde88e70d318"
+  },
+  {
+    "file": "Erdos1092/Transport.lean",
+    "bytes": 2232,
+    "sha256": "32d4548e355506bde199bd9bf154b4d43eada2b646bc527c99b94df86b4d9ff3"
+  },
+  {
+    "file": "Erdos1092/Winding.lean",
+    "bytes": 9278,
+    "sha256": "9f9ab43924b216eef7bd6e430ce64fd03f60b5b40e8770574f383078a527a3a3"
+  },
+  {
+    "file": "lean-toolchain",
+    "bytes": 25,
+    "sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b"
+  },
+  {
+    "file": "lakefile.toml",
+    "bytes": 241,
+    "sha256": "cb71bbb3004e9f3f56e8e77e2950b6d0597f464c5d99373dce94d18d583e35fe"
+  },
+  {
+    "file": "lake-manifest.json",
+    "bytes": 3542,
+    "sha256": "95a154731c9bf4727661b3f3623cc5388014a69300dc35ab6bb39f9a531c0a09"
+  }
+]

@@ -1,0 +1,193 @@
+{
+  "record_kind": "Actual clean independent-directory reproduction before public Git publication",
+  "completed_at_utc": "2026-10-12T14:45:08.711756+00:00",
+  "commands": [
+    "exact-manifest fresh GitHub dependency fetch --depth=1",
+    "./scripts/cache.sh",
+    "./scripts/verify.sh"
+  ],
+  "exit_code": 0,
+  "proof_inputs": [
+    {
+      "file": "Erdos1092.lean",
+      "bytes": 22,
+      "sha256": "98cac31a23e29eb7d3b8b2ee4ecd7150b0150dfaf09f10babcab00359daaa526"
+    },
+    {
+      "file": "Erdos1092/Basic.lean",
+      "bytes": 2127,
+      "sha256": "13d109b89cd2ad1cc5ff028bb0a028aca70e71535c62d5099d67b07f9b7c7995"
+    },
+    {
+      "file": "Erdos1092/Cuts.lean",
+      "bytes": 16314,
+      "sha256": "fd2bd1ed3a7a9d968285a7a24a1d4fcb3281d1840050d04df5d61aa9eeb1fa33"
+    },
+    {
+      "file": "Erdos1092/Main.lean",
+      "bytes": 2632,
+      "sha256": "b76dd41de75a2bff32d36a2f6343bf81fcdaf781106701586ad8493d4aa6e80e"
+    },
+    {
+      "file": "Erdos1092/Outer.lean",
+      "bytes": 12266,
+      "sha256": "ee3283a4a858a265bb0d5664148ff7057bcd5f3658c2bb6c614c198a22b236f2"
+    },
+    {
+      "file": "Erdos1092/Parameters.lean",
+      "bytes": 1609,
+      "sha256": "5d4726d836ba8c8de2efbfd6ddd8538291319dde272dd7154e3edde88e70d318"
+    },
+    {
+      "file": "Erdos1092/Transport.lean",
+      "bytes": 2232,
+      "sha256": "32d4548e355506bde199bd9bf154b4d43eada2b646bc527c99b94df86b4d9ff3"
+    },
+    {
+      "file": "Erdos1092/Winding.lean",
+      "bytes": 9278,
+      "sha256": "9f9ab43924b216eef7bd6e430ce64fd03f60b5b40e8770574f383078a527a3a3"
+    },
+    {
+      "file": "lean-toolchain",
+      "bytes": 25,
+      "sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b"
+    },
+    {
+      "file": "lakefile.toml",
+      "bytes": 241,
+      "sha256": "cb71bbb3004e9f3f56e8e77e2950b6d0597f464c5d99373dce94d18d583e35fe"
+    },
+    {
+      "file": "lake-manifest.json",
+      "bytes": 3542,
+      "sha256": "95a154731c9bf4727661b3f3623cc5388014a69300dc35ab6bb39f9a531c0a09"
+    }
+  ],
+  "checked_package_manifest_sha256": "6eb5847695be0fe4876a0b84388ccddf89b8c9dae2f3de51c21f346b7fc2df0e",
+  "checked_package_file_count": 31,
+  "initial_directory_had_existing_lake": false,
+  "copied_custom_build_artifacts": false,
+  "dependency_sources": [
+    {
+      "name": "plausible",
+      "sha": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+      "elapsed_seconds": 2.93,
+      "source": "Fresh GitHub fetch --depth=1 of manifest revision, no project build artifacts copied"
+    },
+    {
+      "name": "LeanSearchClient",
+      "sha": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+      "elapsed_seconds": 1.88,
+      "source": "Fresh GitHub fetch --depth=1 of manifest revision, no project build artifacts copied"
+    },
+    {
+      "name": "importGraph",
+      "sha": "16f02aa7642864af59f1ff0e384a015994db9118",
+      "elapsed_seconds": 3.93,
+      "source": "Fresh GitHub fetch --depth=1 of manifest revision, no project build artifacts copied"
+    },
+    {
+      "name": "proofwidgets",
+      "sha": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+      "elapsed_seconds": 23.1,
+      "source": "Fresh GitHub fetch --depth=1 of manifest revision, no project build artifacts copied"
+    },
+    {
+      "name": "aesop",
+      "sha": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+      "elapsed_seconds": 4.54,
+      "source": "Fresh GitHub fetch --depth=1 of manifest revision, no project build artifacts copied"
+    },
+    {
+      "name": "Qq",
+      "sha": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+      "elapsed_seconds": 2.73,
+      "source": "Fresh GitHub fetch --depth=1 of manifest revision, no project build artifacts copied"
+    },
+    {
+      "name": "batteries",
+      "sha": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+      "elapsed_seconds": 4.18,
+      "source": "Fresh GitHub fetch --depth=1 of manifest revision, no project build artifacts copied"
+    },
+    {
+      "name": "Cli",
+      "sha": "6130a47896ce867c6a4a55373441e59e565bad0f",
+      "elapsed_seconds": 1.87,
+      "source": "Fresh GitHub fetch --depth=1 of manifest revision, no project build artifacts copied"
+    },
+    {
+      "name": "mathlib",
+      "sha": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "elapsed_seconds": 140.63,
+      "source": "Fresh GitHub fetch --depth=1 of manifest revision, no project build artifacts copied"
+    }
+  ],
+  "runtime": "Previously SHA256-verified official Linux Lean 4.33.0 distribution, explicitly selected; not redownloaded in this local run. Public CI downloads and verifies the official archive afresh.",
+  "official_mathlib_cache": "3014 compiled library cache files for actual imports; official content cache reused locally. Custom Erdos1092 modules were built afresh.",
+  "checks": {
+    "default_lake_build_warnings_as_failures": "passed",
+    "independent_literal_scope_bridges": 4,
+    "public_declaration_axiom_checks": 68,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "custom_proof_module_kernel_replays": 7,
+    "actual_dependency_heads_and_tracked_clean": "all nine passed"
+  },
+  "logs": [
+    {
+      "file": "verification/evidence/portable/axioms.log",
+      "sha256": "45805c053d0b22cdc9db3be1e8f8cfbf2710528a7ef5fc019a384439c0c57c16"
+    },
+    {
+      "file": "verification/evidence/portable/build.log",
+      "sha256": "317df8bd80738ece9cd19e97f6f15aa10fa7e716530cc0185363220c5a5d0f55"
+    },
+    {
+      "file": "verification/evidence/portable/kernel-Basic.log",
+      "sha256": "bd5bdf61eee5a79499ca163dceef89f4246b719704569d5109be8e5f58523c51"
+    },
+    {
+      "file": "verification/evidence/portable/kernel-Cuts.log",
+      "sha256": "655240889cd0ed62f79ad44eaf921350b3170ab54910434391da34d04c0b287d"
+    },
+    {
+      "file": "verification/evidence/portable/kernel-Main.log",
+      "sha256": "64b53fa0739ac1f0f03c3b14ce74d05c56e067cc451664c546e96963c333d604"
+    },
+    {
+      "file": "verification/evidence/portable/kernel-Outer.log",
+      "sha256": "95c217f3f2802991ceedd953c9106ddf84c7fb80eea3ef6e582a4b9646177e83"
+    },
+    {
+      "file": "verification/evidence/portable/kernel-Parameters.log",
+      "sha256": "68e47cd0c3592061e9bf5675637317cceebe15824f4c75ef2d5b36a00ed8efdd"
+    },
+    {
+      "file": "verification/evidence/portable/kernel-Transport.log",
+      "sha256": "27eebafdfd3078f32a38d53f12e50d7607b984e55e1c7ac272fee591bac61d17"
+    },
+    {
+      "file": "verification/evidence/portable/kernel-Winding.log",
+      "sha256": "d6a47a6ca88e0874b8c5fb1bb3beef64880db97abacf1f47cef83b9ecaab0a19"
+    },
+    {
+      "file": "verification/evidence/portable/lake-version.log",
+      "sha256": "91f4400b78be82a22d826a45a18f024b3121af765a09e1ab07dc76e4f1606676"
+    },
+    {
+      "file": "verification/evidence/portable/lean-version.log",
+      "sha256": "64f534c7cd1d0dbe701f44b4da6679d120b63f0f9f3bfab60540a07af143f1f2"
+    },
+    {
+      "file": "verification/evidence/portable/scope.log",
+      "sha256": "99f4cbad3a5448f398f708077958c8acf235db0ec81ef6c3e72d11324893b760"
+    }
+  ],
+  "trust_boundary": "Pinned imported libraries trusted, not all independently replayed. No independent human or external checker claimed.",
+  "record_provenance": "This evidence and its raw logs were added to the package after the run. They do not alter any checked source, configuration, script or literal-scope input. The final published tree is additionally checked by exact-revision public CI."
+}

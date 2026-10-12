@@ -1,0 +1,122 @@
+{
+  "goal_status": "complete",
+  "completed_at_utc": "2026-10-12T14:10:39.081642+00:00",
+  "goal_requirements": [
+    {
+      "requirement": "all_fixed_r",
+      "outcome": "passed",
+      "evidence": "Main.lean:43 and CheckScope.original_all_fixed; only r and 2<=r."
+    },
+    {
+      "requirement": "all_finite_graphs",
+      "outcome": "passed",
+      "evidence": "OriginalAdmissible literal forall n G:SimpleGraph(Fin n), finite-equivalence transport compiled."
+    },
+    {
+      "requirement": "all_noninduced_subgraphs_all_sizes",
+      "outcome": "passed",
+      "evidence": "Outer.IsAdmissible forall H:Subgraph G; g(card H.verts); LocalColorCut_subgraph bridge."
+    },
+    {
+      "requirement": "actual_edge_deletions",
+      "outcome": "passed",
+      "evidence": "E subset H.coe.edgeFinset, actual deleteEdges and cardinal budget; explicit cut coloring."
+    },
+    {
+      "requirement": "complete_math_suppliers",
+      "outcome": "passed",
+      "evidence": "Main actual finite core supplied by Winding/Cuts/Parameters/Transport; Outer core premise discharged."
+    },
+    {
+      "requirement": "no_added_assumptions_or_special_case",
+      "outcome": "passed",
+      "evidence": "Printed erdos_1092 r hr and independent literal bridge, no core/principle/monotonicity assumption."
+    },
+    {
+      "requirement": "matching_local_compile",
+      "outcome": "passed",
+      "evidence": "Lean4.33.0 Mathlibdb584, tracked clean manifest dependencies, --wfail default Lake build exit0."
+    },
+    {
+      "requirement": "terminal_and_bridge_axioms",
+      "outcome": "passed",
+      "evidence": "68 public declarations plus four literal bridges: only propext/Classical.choice/Quot.sound or subsets."
+    },
+    {
+      "requirement": "kernel_replay",
+      "outcome": "passed",
+      "evidence": "All seven modules containing custom proofs replayed with pinned leanchecker, each exit0."
+    }
+  ],
+  "verdict": "Verification passed: complete audited original scope, local source SHA256 snapshot",
+  "primary_target": "Erdos1092.erdos_1092",
+  "proof_git_commit": null,
+  "versions": {
+    "lean": "Lean (version 4.33.0, x86_64-unknown-linux-gnu, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+    "lake": "Lake version 5.0.0-src+d8b1897 (Lean version 4.33.0)"
+  },
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "proof_module_replay_count": 7,
+  "public_declarations_audited": 68,
+  "scope_checks": 4,
+  "snapshot_files": [
+    {
+      "file": "Erdos1092.lean",
+      "bytes": 22,
+      "sha256": "98cac31a23e29eb7d3b8b2ee4ecd7150b0150dfaf09f10babcab00359daaa526"
+    },
+    {
+      "file": "Erdos1092/Basic.lean",
+      "bytes": 2127,
+      "sha256": "13d109b89cd2ad1cc5ff028bb0a028aca70e71535c62d5099d67b07f9b7c7995"
+    },
+    {
+      "file": "Erdos1092/Cuts.lean",
+      "bytes": 16314,
+      "sha256": "fd2bd1ed3a7a9d968285a7a24a1d4fcb3281d1840050d04df5d61aa9eeb1fa33"
+    },
+    {
+      "file": "Erdos1092/Main.lean",
+      "bytes": 2632,
+      "sha256": "b76dd41de75a2bff32d36a2f6343bf81fcdaf781106701586ad8493d4aa6e80e"
+    },
+    {
+      "file": "Erdos1092/Outer.lean",
+      "bytes": 12266,
+      "sha256": "ee3283a4a858a265bb0d5664148ff7057bcd5f3658c2bb6c614c198a22b236f2"
+    },
+    {
+      "file": "Erdos1092/Parameters.lean",
+      "bytes": 1609,
+      "sha256": "5d4726d836ba8c8de2efbfd6ddd8538291319dde272dd7154e3edde88e70d318"
+    },
+    {
+      "file": "Erdos1092/Transport.lean",
+      "bytes": 2232,
+      "sha256": "32d4548e355506bde199bd9bf154b4d43eada2b646bc527c99b94df86b4d9ff3"
+    },
+    {
+      "file": "Erdos1092/Winding.lean",
+      "bytes": 9278,
+      "sha256": "9f9ab43924b216eef7bd6e430ce64fd03f60b5b40e8770574f383078a527a3a3"
+    },
+    {
+      "file": "lean-toolchain",
+      "bytes": 25,
+      "sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b"
+    },
+    {
+      "file": "lakefile.toml",
+      "bytes": 241,
+      "sha256": "cb71bbb3004e9f3f56e8e77e2950b6d0597f464c5d99373dce94d18d583e35fe"
+    },
+    {
+      "file": "lake-manifest.json",
+      "bytes": 3542,
+      "sha256": "95a154731c9bf4727661b3f3623cc5388014a69300dc35ab6bb39f9a531c0a09"
+    }
+  ],
+  "trust_boundary": "Imported pinned Mathlib/dependency libraries trusted, not all independently replayed; no external checker claimed.",
+  "publication": "This historical run occurred before Git publication; subsequent publication does not change its source-hash provenance.",
+  "record_kind": "Historical local verification of the pre-publication source-hash snapshot"
+}
