@@ -57,7 +57,13 @@ must identify that exact commit.
 ## Catalog status
 
 E1092 does not yet have a confirmed independent JSP catalog identifier.
-A problem recommendation and scope confirmation are being prepared using
-the [recommendation draft](submission/RECOMMENDATION-DRAFT.md). Publication
+A [problem recommendation and scope confirmation request](https://github.com/TheJustinSunPrize/awards/issues/5024) has been submitted.
+The [formal submission draft](submission/AWARDS-PR-DRAFT.md) awaits a confirmed
+existing catalog entry before a catalog PR can be prepared. Publication
 and Lean verification do not establish award eligibility, priority or
 organizer acceptance. No unrelated JSP identifier is reused.
+
+Selected complete proof revision: [`7649a561f6c2c8caabd60d0834beeffe89a357d5`](https://github.com/Wang060919/erdos1092-lean/commit/7649a561f6c2c8caabd60d0834beeffe89a357d5).
+Its [public CI run](https://github.com/Wang060919/erdos1092-lean/actions/runs/38265286397)
+completed successfully with the exact same `head_sha`. Subsequent documentation
+commits preserve this selected proof revision and do not change its proof inputs.

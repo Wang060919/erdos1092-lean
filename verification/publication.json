@@ -1,0 +1,25 @@
+{
+  "repository": "https://github.com/Wang060919/erdos1092-lean",
+  "branch": "main",
+  "selected_complete_proof_commit": "7649a561f6c2c8caabd60d0834beeffe89a357d5",
+  "public_ci": {
+    "headSha": "7649a561f6c2c8caabd60d0834beeffe89a357d5",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/Wang060919/erdos1092-lean/actions/runs/38265286397",
+    "createdAt": "2026-10-12T14:45:53Z",
+    "updatedAt": "2026-10-12T14:48:24Z"
+  },
+  "problem_recommendation": {
+    "url": "https://github.com/TheJustinSunPrize/awards/issues/5024",
+    "number": 5024,
+    "author": "Wang060919",
+    "createdAt": "2026-10-12T14:51:20Z",
+    "state_at_recording": "OPEN",
+    "body_matches_prepared_submission": true,
+    "comments_at_recording": 0
+  },
+  "formal_catalog_pr": "Not opened; requires confirmed existing E1092 catalog identity and appropriate scope.",
+  "prize_status": "No independent E1092 JSP identifier or award eligibility, acceptance or priority has been confirmed.",
+  "source_proof_inputs": "All eleven original proof/configuration SHA256 inputs remain unchanged. This record is a later documentation addition, not part of the selected earlier proof commit."
+}

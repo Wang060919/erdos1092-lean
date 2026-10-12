@@ -1,7 +1,9 @@
+Submitted as [TheJustinSunPrize/awards #5024](https://github.com/TheJustinSunPrize/awards/issues/5024).
+
 # [Problem] Erdős 1092: all-subgraph edge budgets
 
-This is a local recommendation draft for the official problem form. Its purpose
-is to obtain an independent catalog identity and scope confirmation for E1092.
+I recommend E1092 for an independent catalog identity and request confirmation
+of the full original-problem scope described below.
 It is not an award-eligibility or priority claim.
 
 ## Problem and original source
@@ -51,14 +53,13 @@ the `r=2` consequence of Rödl's theorem, and
 explains the clique join for general `r`. This repository's contribution is the
 Lean formalization and a self-contained exposition of that solved mathematics.
 
-Planned public proof repository:
+Original public proof repository:
 [Wang060919/erdos1092-lean](https://github.com/Wang060919/erdos1092-lean).
-The links below must be populated from the completed public release before
-this draft is submitted:
+Selected publicly verifiable proof version:
 
-* Immutable proof commit: **[PENDING: exact public commit SHA and link]**.
-* Successful CI run for that exact SHA: **[PENDING: run URL and matching `head_sha`]**.
-* Verification evidence at that commit: **[PENDING: immutable verification report link]**.
+* Immutable proof commit: [`7649a561f6c2c8caabd60d0834beeffe89a357d5`](https://github.com/Wang060919/erdos1092-lean/commit/7649a561f6c2c8caabd60d0834beeffe89a357d5).
+* Successful CI run for that exact SHA: [run 38265286397](https://github.com/Wang060919/erdos1092-lean/actions/runs/38265286397), `head_sha = 7649a561f6c2c8caabd60d0834beeffe89a357d5`, completed/success.
+* Verification evidence at that commit: [clean reproduction record](https://github.com/Wang060919/erdos1092-lean/blob/7649a561f6c2c8caabd60d0834beeffe89a357d5/verification/portable-reproduction.json) and [literal statement check](https://github.com/Wang060919/erdos1092-lean/blob/7649a561f6c2c8caabd60d0834beeffe89a357d5/verification/CheckScope.lean).
 
 The release procedure checks a clean build, an independent literal original
 statement, the axioms of the public declarations, and Lean kernel replay of
