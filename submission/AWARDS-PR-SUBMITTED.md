@@ -1,3 +1,7 @@
+Submitted as [TheJustinSunPrize/awards PR #5025](https://github.com/TheJustinSunPrize/awards/pull/5025).
+
+E1092 has no independently confirmed entry in the current problem bank. This PR proposes one unassigned record containing complete mathematical and Lean proof evidence, and requests inclusion, numbering and scope review. It leaves the existing catalog, index, candidates and awards unchanged.
+
 ## Submission type
 
 - [ ] Mathematical solver information
@@ -5,9 +9,9 @@
 
 ## Problem
 
-- Problem ID: **Pending organizer assignment/confirmation for E1092.** This draft is not ready for a catalog PR until the existing entry is identified.
+- Problem ID: **Erdős 1092; JSP identifier unassigned.** This is a proposed independent addition, with the final JSP identifier and placement requested during maintainer review.
 - Original source: [Erdős problem 1092](https://www.erdosproblems.com/1092), with the at-most-r coloring convention and every fixed r >= 2.
-- Proposed catalog change: record the original complete Lean source at the immutable proof revision below, with its statement and mathematical proof references. The exact existing catalog path and diff await organizer confirmation; no JSP identifier is invented or borrowed from E74.
+- Proposed change: add `problems/proposals/erdos-1092.md`, an unassigned record with the original complete Lean source, exact statement, mathematical proof, reproduction and attribution evidence. No numbered entry, index/count change, candidate or award record is created. This new-problem proposal is outside the ordinary existing-entry update route in CONTRIBUTING; it implements the linked recommendation as a concrete review diff. Inclusion, placement and numbering are requested as part of this review.
 - Related recommendation: https://github.com/TheJustinSunPrize/awards/issues/5024
 - Known mathematical solution: Vojtěch Rödl, *Nearly bipartite graphs with large chromatic number*, Combinatorica 2, 377–383 (1982), [DOI](https://doi.org/10.1007/BF02579434). [Tang](https://www.erdosproblems.com/forum/thread/1092#post-1675) explains the r=2 consequence, [Chojecki](https://www.erdosproblems.com/forum/thread/1092#post-5983) the clique join, and [Bloom](https://www.erdosproblems.com/forum/thread/1092#post-6408) the at-most-r scope.
 
@@ -61,10 +65,14 @@
 
 ## Submission checklist
 
-These checkboxes are deliberately unchecked until the catalog identity is confirmed and the actual catalog diff is reviewed.
+This PR contains a new unassigned proposal, so its scope differs from the template's ordinary existing-entry update. The actual single-file diff and fixed proof references have been checked.
 
-- [ ] I changed only the relevant catalog's solver attribution, Lean proof information or supporting sources and supplied the applicable evidence.
-- [ ] The submitted result fully solves the original problem. Any submitted Lean proof is complete at the specified commit, with no sorry, admit or added unproved assumptions replacing proof steps.
-- [ ] I have linked the complete mathematical solution and its evidence and identified the mathematical solver and Lean contribution separately.
-- [ ] I am submitting my own contribution in the original repository, with selected commit in main and statement, reproduction and axiom evidence.
-- [ ] This PR contains no Lean source, archives, binaries, dependencies or private identity/contact/payment information.
+- [x] I changed only the unassigned E1092 proposal record and supplied its mathematical, formalization and attribution evidence. Existing catalog entries and index/eligibility/register records are unchanged.
+- [x] The submitted result fully solves the original problem. Any submitted Lean proof is complete at the specified commit, with no sorry, admit or added unproved assumptions replacing proof steps.
+- [x] I have linked the complete mathematical solution and its evidence and identified the mathematical solver and Lean contribution separately.
+- [x] I am submitting my own contribution in the original repository, with selected commit in main and statement, reproduction and axiom evidence.
+- [x] This PR contains no Lean source, archives, binaries, dependencies or private identity/contact/payment information.
+
+## Requested maintainer decisions
+
+Please review whether E1092 should be included as an independent problem, confirm the all-fixed-r/all-subgraph function-budget scope, review the supplied mathematics and Lean evidence, and assign an appropriate JSP identifier and catalog location if accepted. The proposal uses **Pending verification** for eligibility. No organizer acceptance, earliest-priority adjudication or award claim is asserted.

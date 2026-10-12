@@ -19,7 +19,19 @@
     "body_matches_prepared_submission": true,
     "comments_at_recording": 0
   },
-  "formal_catalog_pr": "Not opened; requires confirmed existing E1092 catalog identity and appropriate scope.",
   "prize_status": "No independent E1092 JSP identifier or award eligibility, acceptance or priority has been confirmed.",
-  "source_proof_inputs": "All eleven original proof/configuration SHA256 inputs remain unchanged. This record is a later documentation addition, not part of the selected earlier proof commit."
+  "source_proof_inputs": "All eleven original proof/configuration SHA256 inputs remain unchanged. This record is a later documentation addition, not part of the selected earlier proof commit.",
+  "formal_submission_pr": {
+    "url": "https://github.com/TheJustinSunPrize/awards/pull/5025",
+    "number": 5025,
+    "head_commit": "1230c2f844ed970db714c7d557a862c41cfba4ed",
+    "base_commit": "16877004910734cecca83cc5af0fec2f5a4125b3",
+    "state_at_recording": "OPEN",
+    "isDraft": false,
+    "proposal_file": "problems/proposals/erdos-1092.md",
+    "identity": "Unassigned proposal; requests inclusion and assignment during review",
+    "body_and_single_file_diff_verified": true,
+    "mergeable_at_recording": "MERGEABLE"
+  },
+  "organizer_review": "Pending; PR submission does not establish inclusion, accepted scope, authorship/priority adjudication or award eligibility."
 }

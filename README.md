@@ -58,8 +58,11 @@ must identify that exact commit.
 
 E1092 does not yet have a confirmed independent JSP catalog identifier.
 A [problem recommendation and scope confirmation request](https://github.com/TheJustinSunPrize/awards/issues/5024) has been submitted.
-The [formal submission draft](submission/AWARDS-PR-DRAFT.md) awaits a confirmed
-existing catalog entry before a catalog PR can be prepared. Publication
+A [ready review PR #5025](https://github.com/TheJustinSunPrize/awards/pull/5025)
+now proposes an unassigned E1092 record with the complete proof evidence.
+It requests inclusion, numbering and original-scope review; the existing catalog
+and its index are unchanged. The [submitted PR body](submission/AWARDS-PR-SUBMITTED.md)
+is retained here. Publication
 and Lean verification do not establish award eligibility, priority or
 organizer acceptance. No unrelated JSP identifier is reused.
 
